@@ -1,54 +1,126 @@
 @charset "UTF-8";
 
-/***** Breakpoints ******/
+/* Importação de font (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* CSS Reset (compatibilizar com todos navegadores)*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Layout */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    /* 1em = 100% (tamanho padrão) */
+}
+
+.container {
+    margin: 0 auto;
+    /* centralizar o bloco */
+}
+
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Cabeçalho */
+header {
+    height: 100px;
+    background-color: #00ffff;
+}
+
+#logo img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 0px 10px;
+}
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: #00ff00;
+
+    /* Cabeçalho */
+    #logo img {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .container {
+        max-width: 540px;
+        background-color: #ffff00;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
-    body {
-        background-color: #ffff00;
+
+    /* cabeçalho */
+    .container {
+        max-width: 720px;
+        background-color: #00ff00;
+    }
+    header {
+        height: 120px;
+    }
+    #logo img {
+        width: 100px;
+        height: 100px;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-    body {
-        background-color: #00ffff;
+    /* cabeçalho */
+    .container {
+        max-width: 960px;
+        background-color: #ffa500;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-    body {
-        background-color: #ff0000;
-        color: #ffff00;
+    .container {
+        max-width: 1140px;
+        background-color: #ff009d;
+    }
+    header {
+        height: 150px;
+    }
+    #logo img {
+        width: 128px;
+        height: 128px;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Telas FullHD / 4K / SmartTV >>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
-    body {
-        background-color: #4b0082;
-        color: #ffffff;
+    .container {
+        max-width: 1360px;
+        background-color: #7d5b8c;
+    }
+    header {
+        height: 195px;
+    }
+    #logo img {
+        width: 176px;
+        height: 176px;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
