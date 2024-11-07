@@ -65,7 +65,7 @@ header {
     display: none;
 }
 
-/* Efeito de deslizar o menu */
+/* Efeito "deslizar o menu" */
 /* Se check estiver "ticado", crir um estilo para ul*/
 #check:checked~ul {
     right: 0;
@@ -83,7 +83,7 @@ label {
 nav ul {
     height: 100vh;
     /* 100vh - 100% altura da tela */
-    background-color: var(--azul);
+    background-color: rgba(5, 21, 43, 0.9);
     list-style: none;
     /* remover bullets */
     width: 65%;
@@ -177,6 +177,15 @@ main h2 {
         width: 50%;
         right: -50%;
     }
+
+    /* Banner */
+    main h1 {
+        font-size: 4em;
+    }
+
+    main h2 {
+        font-size: 2.5em;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -236,6 +245,11 @@ main h2 {
 
     nav ul li a:hover {
         color: var(--vermelho);
+    }
+
+    /* Banner */
+    main h1 {
+        font-size: 5em;
     }
 }
 
