@@ -201,7 +201,31 @@ main h2 {
     font-weight: 600;
 }
 
-/* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
+/****** Sobre ******/
+/* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2, p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+/* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -240,6 +264,12 @@ main h2 {
     #imagemDestaque img {
         width: 256px;
         height: 256px;
+    }
+
+    /****** Sobre ******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -298,7 +328,7 @@ main h2 {
     /****** Layout ******/
     .container {
         max-width: 1140px;
-        /* background-color: #ff009d; */
+        /* background-color: #ff009d; */       
     }
 
     /****** Cabeçalho ******/
@@ -351,6 +381,16 @@ main h2 {
     #destaque {
         /* O código abaixo fixa o banner (efeito parallax) */
         background-attachment: fixed;
+    }
+
+    /******* Sobre ******/
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #video iframe {
+        margin: 0;
     }
 }
 
