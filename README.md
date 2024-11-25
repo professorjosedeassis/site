@@ -4,3 +4,5 @@
 Estudo do HTML5 e CSS3
 ## Autor
 Professor José de Assis
+## Site
+![](img/qrcode.png)
