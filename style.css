@@ -11,6 +11,7 @@
     --branco: #fff;
     --amarelo: #e5b567;
     --azul: #9cdcfe;
+    --azulMedio: #3b468c;
     --azulEscuro: #05152b;
     --cinzaClaro: #d6d6d6;
     --cinza: #858585;
@@ -204,12 +205,13 @@ main h2 {
 
 /****** Sobre ******/
 /* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
-#sobre .container {
-    flex-direction: column;
+#sobre {
+    background-color: var(--azulMedio);
+    padding: 60px 15px;
 }
 
-#sobre {
-    padding: 50px 15px;
+#sobre .container {
+    flex-direction: column;
 }
 
 #sobre h2, p {
