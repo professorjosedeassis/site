@@ -6,8 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 /* Variáveis */
-:root {
-    --background: #0f0f0f;
+:root {    
     --branco: #fff;
     --amarelo: #e5b567;
     --azul: #9cdcfe;
@@ -16,12 +15,15 @@
     --azulEscuro: #05152b;
     --cinzaClaro: #d6d6d6;
     --cinza: #858585;
+    --cinzaescuro: #373738;
     --laranja: #e87d3e;
     --pink: #b05279;
+    --pinkescuro: #462347;
     --roxo: #9e86c8;
     --roxoEscuro: #2c085a;
     --verde: #b4d273;
     --vermelho: #ff0000;
+    --preto: #000;
 }
 
 /* CSS Reset (compatibilizar com todos navegadores) */
@@ -32,11 +34,16 @@
 }
 
 /* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html {
+    /* rolagem suave */
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
     /* 1em = 100% (tamanho padrão) */
-    background-color: var(--background);
+    background-color: var(--cinzaescuro);
 }
 
 .container {
@@ -66,9 +73,8 @@ body {
     height: 520px;
     margin-top: 25px;
     background-color: var(--azulMedio);
-    border: 1px solid var(--azul);
     border-radius: 25px;
-    box-shadow: rgba(255,255,255,0.4) 0px 2px 4px, rgba(255,255,255,0.3) 0px 7px 13px -3px, rgba(255,255,255,0.2) 0px -3px 0px inset ;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
     text-align: center;
 }
 
@@ -94,6 +100,11 @@ body {
     color: var(--azulEscuro);
 }
 
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -216,7 +227,7 @@ main h2 {
     color: var(--branco);
 }
 
-#textoDestaque h2 {    
+#textoDestaque h2 {
     margin-bottom: 20px;
     color: var(--amarelo);
 }
@@ -243,7 +254,7 @@ main h2 {
 /****** Sobre ******/
 /* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
 #sobre {
-    background-color: var(--roxoEscuro);
+    background-color: var(--azulMedio);
     padding: 60px 15px;
 }
 
@@ -321,8 +332,15 @@ main h2 {
 .containerCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;   
+    justify-content: center;
 }
+
+/****** Rodapé ******/
+footer {
+    background-color: var(--preto);
+    padding: 50px 0px;
+}
+
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -432,7 +450,7 @@ main h2 {
     /****** Layout ******/
     .container {
         max-width: 1140px;
-        /* background-color: #ff009d; */       
+        /* background-color: #ff009d; */
     }
 
     /****** Cabeçalho ******/
@@ -508,11 +526,12 @@ main h2 {
     }
 
     #imagemFaixa img {
-        width: 400px;
-        height: 400px;
-    }  
-   
+        width: 350px;
+        height: 350px;
+    }
+
 }
+
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
